@@ -1,0 +1,8 @@
+policy: offload
+params:
+  threshold_tokens: 2000
+  preview:                 # same settings as Policy A's filter
+    head_lines: 50
+    tail_lines: 50
+    keep_patterns: ["error", "fail", "traceback", "assert"]
+  path_prefix: /tmp/prism

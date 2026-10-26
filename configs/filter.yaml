@@ -1,0 +1,6 @@
+policy: filter
+params:
+  threshold_tokens: 2000   # outputs shorter than this pass through unchanged; tune in pilots
+  head_lines: 50
+  tail_lines: 50
+  keep_patterns: ["error", "fail", "traceback", "assert"]
