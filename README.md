@@ -31,14 +31,7 @@ tests/          unit tests
 
 `prism/events.py` and the JSONL log format are the contract between team members. They are frozen in Week 10; changes need both members' sign-off.
 
-Example log lines:
-
-```jsonl
-{"type": "tool_result", "step": 4, "tool": "bash", "command": "python -m pytest tests/", "output": "...", "exit_code": 1}
-{"type": "compression", "step": 4, "policy": "filter", "tokens_before": 9120, "tokens_after": 610, "ms": 3}
-{"type": "model_call", "step": 5, "input_tokens": 41200, "cache_read_tokens": 30100, "cache_write_tokens": 900, "output_tokens": 310, "cost_usd": 0.021, "latency_s": 6.2}
-{"type": "result", "task_id": "...", "harness": "mini", "config": "filter", "repeat": 1, "solved": true}
-```
+The full field list, JSONL format, token-counting and cost rules are in [docs/design.md](docs/design.md).
 
 ## Setup
 

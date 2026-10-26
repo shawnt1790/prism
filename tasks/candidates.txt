@@ -1,0 +1,11 @@
+# Checkpoint candidates: SWE-bench Verified (test split), verified 2026-10-26.
+# Difficulty is the dataset's own label. Run each once with configs/none.yaml, then keep the
+# 3-5 where some tool output exceeded 10,000 chars and the run didn't crash -> tasks/checkpoint.txt
+#
+# Dropped as too easy ("<15 min fix"): django__django-14580, sphinx-doc__sphinx-8721
+django__django-13315        # 15 min - 1 hour
+django__django-15695        # 15 min - 1 hour
+sympy__sympy-20590          # 15 min - 1 hour
+sympy__sympy-21612          # 15 min - 1 hour
+sympy__sympy-24066          # 15 min - 1 hour
+pytest-dev__pytest-7490     # 15 min - 1 hour

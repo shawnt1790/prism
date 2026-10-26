@@ -1,0 +1,9 @@
+# Settings shared by every config. Identical across configs within a harness.
+model: claude-haiku-5-5       # fallback: claude-sonnet-5-5 if Haiku solves 0 pilot tasks
+effort: medium                # set explicitly; don't rely on the model default
+step_limit: 100
+cost_limit_usd: 1.00
+dataset: princeton-nlp/SWE-bench_Verified
+split: test
+env:
+  MSWEA_COST_TRACKING: ignore_errors   # Prism computes cost itself (prism/pricing.py)
