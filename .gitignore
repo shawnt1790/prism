@@ -24,3 +24,4 @@ Thumbs.db
 .venv/
 logs/*.json
 !logs/.gitkeep
+logs/*
