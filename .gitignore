@@ -22,3 +22,5 @@ logs/*.jsonl
 .DS_Store
 Thumbs.db
 .venv/
+logs/*.json
+!logs/.gitkeep

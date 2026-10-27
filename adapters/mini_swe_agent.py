@@ -28,7 +28,7 @@ import warnings
 from collections.abc import Callable
 
 from minisweagent.agents.default import DefaultAgent
-from minisweagent.exceptions import FormatError
+from minisweagent.exceptions import FormatError, LimitsExceeded
 
 from prism import pricing
 from prism.events import ModelCallEvent, ToolResultEvent
@@ -45,19 +45,32 @@ def passthrough(event: ToolResultEvent) -> str:
 class PrismAgent(DefaultAgent):
     def __init__(self, model, env, *, run_id: str, prism_logger,
                  compress: Callable[[ToolResultEvent], str] = passthrough,
-                 model_name: str | None = None, **kwargs):
+                 model_name: str | None = None, prism_cost_limit: float = 0.0, **kwargs):
         super().__init__(model, env, **kwargs)
         # Prefixed names so nothing clashes with DefaultAgent's own attributes
         # (DefaultAgent already uses self.logger for Python logging).
         self.prism_run_id = run_id
         self.prism_logger = prism_logger
         self.prism_compress = compress
-        self.prism_model_name = model_name or getattr(model.config, "model_name", "unknown")
-        self._warned_unpriced = False
+        self.prism_model_name = (model_name or getattr(model.config, "model_name", "unknown")).split("/")[-1]
+        # Cost cap computed from Prism's own price table. mini-SWE-agent's cost_limit can't be
+        # relied on: with MSWEA_COST_TRACKING=ignore_errors it records $0 for unpriced models.
+        self.prism_cost_limit = prism_cost_limit
+        self.prism_total_cost = 0.0
+        self.prism_cost_complete = True   # False if any call couldn't be priced
+        self.prism_n_model_calls = 0
+        self.prism_hit_cost_limit = False
 
     # ---------- model calls ----------
 
     def query(self) -> dict:
+        if 0 < self.prism_cost_limit <= self.prism_total_cost:
+            self.prism_hit_cost_limit = True
+            raise LimitsExceeded({
+                "role": "exit",
+                "content": "LimitsExceeded",
+                "extra": {"exit_status": "LimitsExceeded", "submission": ""},
+            })
         start = time.time()
         try:
             message = super().query()
@@ -86,10 +99,14 @@ class PrismAgent(DefaultAgent):
             # Model missing from prism/pricing.py. Tokens are still logged, so cost
             # can be recomputed later once the price table is updated.
             cost_usd = None
-            if not self._warned_unpriced:
+            if self.prism_cost_complete:
                 warnings.warn(f"No price for {self.prism_model_name!r} in prism/pricing.py; "
-                              "logging cost_usd=None.")
-                self._warned_unpriced = True
+                              "logging cost_usd=None and the cost cap is inactive.")
+            self.prism_cost_complete = False
+
+        self.prism_n_model_calls += 1
+        if cost_usd is not None:
+            self.prism_total_cost += cost_usd
 
         self.prism_logger.log(ModelCallEvent(
             run_id=self.prism_run_id,
