@@ -98,3 +98,17 @@ mini-SWE-agent's SWE-bench config already truncates: output under 10,000 chars i
 The adapter wraps the environment's `execute()`, so Prism sees raw output and runs **before** that template. A policy that gets output under 10,000 chars therefore skips the harness truncation entirely.
 
 Prompt caching is on by default for Claude in mini-SWE-agent. Policies must be **deterministic** (same input, same output), and nothing may rewrite earlier messages, or the cache prefix breaks.
+
+## mini-SWE-agent hook (v2.4.6)
+
+- **Tool output:** `minisweagent/agents/default.py`, `DefaultAgent.execute_actions` (lines 154–157).
+  Line 156 runs each command via `self.env.execute(action)`, which returns `{"output", "returncode", "exception_info"}`
+  with raw output (stdout and stderr merged). Line 157 formats outputs into observation messages, applying the
+  10,000-char truncation template from `config/benchmarks/swebench.yaml`. Prism runs between these two lines.
+- **Model usage:** `DefaultAgent.query` (lines 130–152). `message["extra"]["response"]["usage"]` has input,
+  output, and cache token counts for `ModelCallEvent`.
+- **Integration approach:** subclass `DefaultAgent` as `PrismAgent` in `adapters/mini_swe_agent.py`, overriding
+  `query` and `execute_actions`. No changes inside mini-SWE-agent. The subclass has the step number directly
+  (`self.n_calls`), so it is used instead of wrapping `env.execute()`.
+- **Runner:** `mini-extra swebench` hardcodes its own agent class, so `eval/run.py` builds runs directly with
+  `get_sb_environment(config, instance)` and `PrismAgent(model, env, ...)`.
