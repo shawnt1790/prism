@@ -4,6 +4,7 @@ Prices are USD per million tokens. Cache read/write rates for Haiku 5.5 assume t
 0.1x / 1.25x of input; confirm against the pricing page before the Week 11 budget.
 """
 
+import re
 from dataclasses import dataclass
 
 
@@ -24,12 +25,16 @@ PRICES: dict[str, list[tuple[float, Rates]]] = {
     "claude-sonnet-5-5": [
         (float("inf"), Rates(input=2.00, output=10.00, cache_read=0.20, cache_write=2.50)),
     ],
+    "claude-haiku-4-5": [   # previous generation, 10x Haiku 5.5's price
+        (float("inf"), Rates(input=1.00, output=5.00, cache_read=0.10, cache_write=1.25)),
+    ],
 }
 
 
 def _base_model(model: str) -> str:
-    # accept litellm-style names such as "anthropic/claude-haiku-5-5"
-    return model.split("/")[-1]
+    # accept litellm-style names such as "anthropic/claude-haiku-5-5" and dated
+    # snapshots such as "claude-haiku-4-5-20251001"
+    return re.sub(r"-\d{8}$", "", model.split("/")[-1])
 
 
 def prompt_tokens(input_tokens: int, cache_read_tokens: int, cache_write_tokens: int) -> int:

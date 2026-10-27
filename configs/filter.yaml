@@ -4,3 +4,6 @@ params:
   head_lines: 50
   tail_lines: 50
   keep_patterns: ["error", "fail", "traceback", "assert"]
+  context_lines: 2         # lines kept after each matching line (traceback frames)
+  max_kept_lines: 100      # cap on matching + context lines between head and tail
+  max_line_chars: 300      # longer lines are cut (minified files, one-line JSON)

@@ -1,0 +1,785 @@
+============================= test session starts =============================
+platform linux -- Python 3.10.0, pytest-8, pluggy-1
+rootdir: /testbed
+plugins: anyio-4.15.1, platformdirs-4.12.4
+collecting ... collected 404 items
+
+test_numbers.py::test_square_is_nonnegative[0] PASSED                    [  0%]
+test_numbers.py::test_square_is_nonnegative[1] PASSED                    [  0%]
+test_numbers.py::test_square_is_nonnegative[2] PASSED                    [  0%]
+test_numbers.py::test_square_is_nonnegative[3] PASSED                    [  0%]
+test_numbers.py::test_square_is_nonnegative[4] PASSED                    [  1%]
+test_numbers.py::test_square_is_nonnegative[5] PASSED                    [  1%]
+test_numbers.py::test_square_is_nonnegative[6] PASSED                    [  1%]
+test_numbers.py::test_square_is_nonnegative[7] PASSED                    [  1%]
+test_numbers.py::test_square_is_nonnegative[8] PASSED                    [  2%]
+test_numbers.py::test_square_is_nonnegative[9] PASSED                    [  2%]
+test_numbers.py::test_square_is_nonnegative[10] PASSED                   [  2%]
+test_numbers.py::test_square_is_nonnegative[11] PASSED                   [  2%]
+test_numbers.py::test_square_is_nonnegative[12] PASSED                   [  3%]
+test_numbers.py::test_square_is_nonnegative[13] PASSED                   [  3%]
+test_numbers.py::test_square_is_nonnegative[14] PASSED                   [  3%]
+test_numbers.py::test_square_is_nonnegative[15] PASSED                   [  3%]
+test_numbers.py::test_square_is_nonnegative[16] PASSED                   [  4%]
+test_numbers.py::test_square_is_nonnegative[17] PASSED                   [  4%]
+test_numbers.py::test_square_is_nonnegative[18] PASSED                   [  4%]
+test_numbers.py::test_square_is_nonnegative[19] PASSED                   [  4%]
+test_numbers.py::test_square_is_nonnegative[20] PASSED                   [  5%]
+test_numbers.py::test_square_is_nonnegative[21] PASSED                   [  5%]
+test_numbers.py::test_square_is_nonnegative[22] PASSED                   [  5%]
+test_numbers.py::test_square_is_nonnegative[23] PASSED                   [  5%]
+test_numbers.py::test_square_is_nonnegative[24] PASSED                   [  6%]
+test_numbers.py::test_square_is_nonnegative[25] PASSED                   [  6%]
+test_numbers.py::test_square_is_nonnegative[26] PASSED                   [  6%]
+test_numbers.py::test_square_is_nonnegative[27] PASSED                   [  6%]
+test_numbers.py::test_square_is_nonnegative[28] PASSED                   [  7%]
+test_numbers.py::test_square_is_nonnegative[29] PASSED                   [  7%]
+test_numbers.py::test_square_is_nonnegative[30] PASSED                   [  7%]
+test_numbers.py::test_square_is_nonnegative[31] PASSED                   [  7%]
+test_numbers.py::test_square_is_nonnegative[32] PASSED                   [  8%]
+test_numbers.py::test_square_is_nonnegative[33] PASSED                   [  8%]
+test_numbers.py::test_square_is_nonnegative[34] PASSED                   [  8%]
+test_numbers.py::test_square_is_nonnegative[35] PASSED                   [  8%]
+test_numbers.py::test_square_is_nonnegative[36] PASSED                   [  9%]
+test_numbers.py::test_square_is_nonnegative[37] FAILED                   [  9%]
+test_numbers.py::test_square_is_nonnegative[38] PASSED                   [  9%]
+test_numbers.py::test_square_is_nonnegative[39] PASSED                   [  9%]
+test_numbers.py::test_square_is_nonnegative[40] PASSED                   [ 10%]
+test_numbers.py::test_square_is_nonnegative[41] PASSED                   [ 10%]
+test_numbers.py::test_square_is_nonnegative[42] PASSED                   [ 10%]
+test_numbers.py::test_square_is_nonnegative[43] PASSED                   [ 10%]
+test_numbers.py::test_square_is_nonnegative[44] PASSED                   [ 11%]
+test_numbers.py::test_square_is_nonnegative[45] PASSED                   [ 11%]
+test_numbers.py::test_square_is_nonnegative[46] PASSED                   [ 11%]
+test_numbers.py::test_square_is_nonnegative[47] PASSED                   [ 11%]
+test_numbers.py::test_square_is_nonnegative[48] PASSED                   [ 12%]
+test_numbers.py::test_square_is_nonnegative[49] PASSED                   [ 12%]
+test_numbers.py::test_square_is_nonnegative[50] PASSED                   [ 12%]
+test_numbers.py::test_square_is_nonnegative[51] PASSED                   [ 12%]
+test_numbers.py::test_square_is_nonnegative[52] PASSED                   [ 13%]
+test_numbers.py::test_square_is_nonnegative[53] PASSED                   [ 13%]
+test_numbers.py::test_square_is_nonnegative[54] PASSED                   [ 13%]
+test_numbers.py::test_square_is_nonnegative[55] PASSED                   [ 13%]
+test_numbers.py::test_square_is_nonnegative[56] PASSED                   [ 14%]
+test_numbers.py::test_square_is_nonnegative[57] PASSED                   [ 14%]
+test_numbers.py::test_square_is_nonnegative[58] PASSED                   [ 14%]
+test_numbers.py::test_square_is_nonnegative[59] PASSED                   [ 14%]
+test_numbers.py::test_square_is_nonnegative[60] PASSED                   [ 15%]
+test_numbers.py::test_square_is_nonnegative[61] PASSED                   [ 15%]
+test_numbers.py::test_square_is_nonnegative[62] PASSED                   [ 15%]
+test_numbers.py::test_square_is_nonnegative[63] PASSED                   [ 15%]
+test_numbers.py::test_square_is_nonnegative[64] PASSED                   [ 16%]
+test_numbers.py::test_square_is_nonnegative[65] PASSED                   [ 16%]
+test_numbers.py::test_square_is_nonnegative[66] PASSED                   [ 16%]
+test_numbers.py::test_square_is_nonnegative[67] PASSED                   [ 16%]
+test_numbers.py::test_square_is_nonnegative[68] PASSED                   [ 17%]
+test_numbers.py::test_square_is_nonnegative[69] PASSED                   [ 17%]
+test_numbers.py::test_square_is_nonnegative[70] PASSED                   [ 17%]
+test_numbers.py::test_square_is_nonnegative[71] PASSED                   [ 17%]
+test_numbers.py::test_square_is_nonnegative[72] PASSED                   [ 18%]
+test_numbers.py::test_square_is_nonnegative[73] PASSED                   [ 18%]
+test_numbers.py::test_square_is_nonnegative[74] PASSED                   [ 18%]
+test_numbers.py::test_square_is_nonnegative[75] PASSED                   [ 18%]
+test_numbers.py::test_square_is_nonnegative[76] PASSED                   [ 19%]
+test_numbers.py::test_square_is_nonnegative[77] PASSED                   [ 19%]
+test_numbers.py::test_square_is_nonnegative[78] PASSED                   [ 19%]
+test_numbers.py::test_square_is_nonnegative[79] PASSED                   [ 19%]
+test_numbers.py::test_square_is_nonnegative[80] PASSED                   [ 20%]
+test_numbers.py::test_square_is_nonnegative[81] PASSED                   [ 20%]
+test_numbers.py::test_square_is_nonnegative[82] PASSED                   [ 20%]
+test_numbers.py::test_square_is_nonnegative[83] PASSED                   [ 20%]
+test_numbers.py::test_square_is_nonnegative[84] PASSED                   [ 21%]
+test_numbers.py::test_square_is_nonnegative[85] PASSED                   [ 21%]
+test_numbers.py::test_square_is_nonnegative[86] PASSED                   [ 21%]
+test_numbers.py::test_square_is_nonnegative[87] PASSED                   [ 21%]
+test_numbers.py::test_square_is_nonnegative[88] PASSED                   [ 22%]
+test_numbers.py::test_square_is_nonnegative[89] PASSED                   [ 22%]
+test_numbers.py::test_square_is_nonnegative[90] PASSED                   [ 22%]
+test_numbers.py::test_square_is_nonnegative[91] PASSED                   [ 22%]
+test_numbers.py::test_square_is_nonnegative[92] PASSED                   [ 23%]
+test_numbers.py::test_square_is_nonnegative[93] PASSED                   [ 23%]
+test_numbers.py::test_square_is_nonnegative[94] PASSED                   [ 23%]
+test_numbers.py::test_square_is_nonnegative[95] PASSED                   [ 23%]
+test_numbers.py::test_square_is_nonnegative[96] PASSED                   [ 24%]
+test_numbers.py::test_square_is_nonnegative[97] PASSED                   [ 24%]
+test_numbers.py::test_square_is_nonnegative[98] PASSED                   [ 24%]
+test_numbers.py::test_square_is_nonnegative[99] PASSED                   [ 24%]
+test_numbers.py::test_square_is_nonnegative[100] PASSED                  [ 25%]
+test_numbers.py::test_square_is_nonnegative[101] PASSED                  [ 25%]
+test_numbers.py::test_square_is_nonnegative[102] PASSED                  [ 25%]
+test_numbers.py::test_square_is_nonnegative[103] PASSED                  [ 25%]
+test_numbers.py::test_square_is_nonnegative[104] PASSED                  [ 25%]
+test_numbers.py::test_square_is_nonnegative[105] PASSED                  [ 26%]
+test_numbers.py::test_square_is_nonnegative[106] PASSED                  [ 26%]
+test_numbers.py::test_square_is_nonnegative[107] PASSED                  [ 26%]
+test_numbers.py::test_square_is_nonnegative[108] PASSED                  [ 26%]
+test_numbers.py::test_square_is_nonnegative[109] PASSED                  [ 27%]
+test_numbers.py::test_square_is_nonnegative[110] PASSED                  [ 27%]
+test_numbers.py::test_square_is_nonnegative[111] PASSED                  [ 27%]
+test_numbers.py::test_square_is_nonnegative[112] PASSED                  [ 27%]
+test_numbers.py::test_square_is_nonnegative[113] PASSED                  [ 28%]
+test_numbers.py::test_square_is_nonnegative[114] PASSED                  [ 28%]
+test_numbers.py::test_square_is_nonnegative[115] PASSED                  [ 28%]
+test_numbers.py::test_square_is_nonnegative[116] PASSED                  [ 28%]
+test_numbers.py::test_square_is_nonnegative[117] PASSED                  [ 29%]
+test_numbers.py::test_square_is_nonnegative[118] PASSED                  [ 29%]
+test_numbers.py::test_square_is_nonnegative[119] PASSED                  [ 29%]
+test_numbers.py::test_square_is_nonnegative[120] PASSED                  [ 29%]
+test_numbers.py::test_square_is_nonnegative[121] PASSED                  [ 30%]
+test_numbers.py::test_square_is_nonnegative[122] PASSED                  [ 30%]
+test_numbers.py::test_square_is_nonnegative[123] PASSED                  [ 30%]
+test_numbers.py::test_square_is_nonnegative[124] PASSED                  [ 30%]
+test_numbers.py::test_square_is_nonnegative[125] PASSED                  [ 31%]
+test_numbers.py::test_square_is_nonnegative[126] PASSED                  [ 31%]
+test_numbers.py::test_square_is_nonnegative[127] PASSED                  [ 31%]
+test_numbers.py::test_square_is_nonnegative[128] PASSED                  [ 31%]
+test_numbers.py::test_square_is_nonnegative[129] PASSED                  [ 32%]
+test_numbers.py::test_square_is_nonnegative[130] PASSED                  [ 32%]
+test_numbers.py::test_square_is_nonnegative[131] PASSED                  [ 32%]
+test_numbers.py::test_square_is_nonnegative[132] PASSED                  [ 32%]
+test_numbers.py::test_square_is_nonnegative[133] PASSED                  [ 33%]
+test_numbers.py::test_square_is_nonnegative[134] PASSED                  [ 33%]
+test_numbers.py::test_square_is_nonnegative[135] PASSED                  [ 33%]
+test_numbers.py::test_square_is_nonnegative[136] PASSED                  [ 33%]
+test_numbers.py::test_square_is_nonnegative[137] PASSED                  [ 34%]
+test_numbers.py::test_square_is_nonnegative[138] PASSED                  [ 34%]
+test_numbers.py::test_square_is_nonnegative[139] PASSED                  [ 34%]
+test_numbers.py::test_square_is_nonnegative[140] PASSED                  [ 34%]
+test_numbers.py::test_square_is_nonnegative[141] PASSED                  [ 35%]
+test_numbers.py::test_square_is_nonnegative[142] PASSED                  [ 35%]
+test_numbers.py::test_square_is_nonnegative[143] PASSED                  [ 35%]
+test_numbers.py::test_square_is_nonnegative[144] PASSED                  [ 35%]
+test_numbers.py::test_square_is_nonnegative[145] PASSED                  [ 36%]
+test_numbers.py::test_square_is_nonnegative[146] PASSED                  [ 36%]
+test_numbers.py::test_square_is_nonnegative[147] PASSED                  [ 36%]
+test_numbers.py::test_square_is_nonnegative[148] PASSED                  [ 36%]
+test_numbers.py::test_square_is_nonnegative[149] PASSED                  [ 37%]
+test_numbers.py::test_square_is_nonnegative[150] PASSED                  [ 37%]
+test_numbers.py::test_square_is_nonnegative[151] FAILED                  [ 37%]
+test_numbers.py::test_square_is_nonnegative[152] PASSED                  [ 37%]
+test_numbers.py::test_square_is_nonnegative[153] PASSED                  [ 38%]
+test_numbers.py::test_square_is_nonnegative[154] PASSED                  [ 38%]
+test_numbers.py::test_square_is_nonnegative[155] PASSED                  [ 38%]
+test_numbers.py::test_square_is_nonnegative[156] PASSED                  [ 38%]
+test_numbers.py::test_square_is_nonnegative[157] PASSED                  [ 39%]
+test_numbers.py::test_square_is_nonnegative[158] PASSED                  [ 39%]
+test_numbers.py::test_square_is_nonnegative[159] PASSED                  [ 39%]
+test_numbers.py::test_square_is_nonnegative[160] PASSED                  [ 39%]
+test_numbers.py::test_square_is_nonnegative[161] PASSED                  [ 40%]
+test_numbers.py::test_square_is_nonnegative[162] PASSED                  [ 40%]
+test_numbers.py::test_square_is_nonnegative[163] PASSED                  [ 40%]
+test_numbers.py::test_square_is_nonnegative[164] PASSED                  [ 40%]
+test_numbers.py::test_square_is_nonnegative[165] PASSED                  [ 41%]
+test_numbers.py::test_square_is_nonnegative[166] PASSED                  [ 41%]
+test_numbers.py::test_square_is_nonnegative[167] PASSED                  [ 41%]
+test_numbers.py::test_square_is_nonnegative[168] PASSED                  [ 41%]
+test_numbers.py::test_square_is_nonnegative[169] PASSED                  [ 42%]
+test_numbers.py::test_square_is_nonnegative[170] PASSED                  [ 42%]
+test_numbers.py::test_square_is_nonnegative[171] PASSED                  [ 42%]
+test_numbers.py::test_square_is_nonnegative[172] PASSED                  [ 42%]
+test_numbers.py::test_square_is_nonnegative[173] PASSED                  [ 43%]
+test_numbers.py::test_square_is_nonnegative[174] PASSED                  [ 43%]
+test_numbers.py::test_square_is_nonnegative[175] PASSED                  [ 43%]
+test_numbers.py::test_square_is_nonnegative[176] PASSED                  [ 43%]
+test_numbers.py::test_square_is_nonnegative[177] PASSED                  [ 44%]
+test_numbers.py::test_square_is_nonnegative[178] PASSED                  [ 44%]
+test_numbers.py::test_square_is_nonnegative[179] PASSED                  [ 44%]
+test_numbers.py::test_square_is_nonnegative[180] PASSED                  [ 44%]
+test_numbers.py::test_square_is_nonnegative[181] PASSED                  [ 45%]
+test_numbers.py::test_square_is_nonnegative[182] PASSED                  [ 45%]
+test_numbers.py::test_square_is_nonnegative[183] PASSED                  [ 45%]
+test_numbers.py::test_square_is_nonnegative[184] PASSED                  [ 45%]
+test_numbers.py::test_square_is_nonnegative[185] PASSED                  [ 46%]
+test_numbers.py::test_square_is_nonnegative[186] PASSED                  [ 46%]
+test_numbers.py::test_square_is_nonnegative[187] PASSED                  [ 46%]
+test_numbers.py::test_square_is_nonnegative[188] PASSED                  [ 46%]
+test_numbers.py::test_square_is_nonnegative[189] PASSED                  [ 47%]
+test_numbers.py::test_square_is_nonnegative[190] PASSED                  [ 47%]
+test_numbers.py::test_square_is_nonnegative[191] PASSED                  [ 47%]
+test_numbers.py::test_square_is_nonnegative[192] PASSED                  [ 47%]
+test_numbers.py::test_square_is_nonnegative[193] PASSED                  [ 48%]
+test_numbers.py::test_square_is_nonnegative[194] PASSED                  [ 48%]
+test_numbers.py::test_square_is_nonnegative[195] PASSED                  [ 48%]
+test_numbers.py::test_square_is_nonnegative[196] PASSED                  [ 48%]
+test_numbers.py::test_square_is_nonnegative[197] PASSED                  [ 49%]
+test_numbers.py::test_square_is_nonnegative[198] PASSED                  [ 49%]
+test_numbers.py::test_square_is_nonnegative[199] PASSED                  [ 49%]
+test_numbers.py::test_square_is_nonnegative[200] PASSED                  [ 49%]
+test_numbers.py::test_square_is_nonnegative[201] PASSED                  [ 50%]
+test_numbers.py::test_square_is_nonnegative[202] PASSED                  [ 50%]
+test_numbers.py::test_square_is_nonnegative[203] PASSED                  [ 50%]
+test_numbers.py::test_square_is_nonnegative[204] PASSED                  [ 50%]
+test_numbers.py::test_square_is_nonnegative[205] PASSED                  [ 50%]
+test_numbers.py::test_square_is_nonnegative[206] PASSED                  [ 51%]
+test_numbers.py::test_square_is_nonnegative[207] PASSED                  [ 51%]
+test_numbers.py::test_square_is_nonnegative[208] PASSED                  [ 51%]
+test_numbers.py::test_square_is_nonnegative[209] PASSED                  [ 51%]
+test_numbers.py::test_square_is_nonnegative[210] PASSED                  [ 52%]
+test_numbers.py::test_square_is_nonnegative[211] PASSED                  [ 52%]
+test_numbers.py::test_square_is_nonnegative[212] PASSED                  [ 52%]
+test_numbers.py::test_square_is_nonnegative[213] PASSED                  [ 52%]
+test_numbers.py::test_square_is_nonnegative[214] PASSED                  [ 53%]
+test_numbers.py::test_square_is_nonnegative[215] PASSED                  [ 53%]
+test_numbers.py::test_square_is_nonnegative[216] PASSED                  [ 53%]
+test_numbers.py::test_square_is_nonnegative[217] PASSED                  [ 53%]
+test_numbers.py::test_square_is_nonnegative[218] PASSED                  [ 54%]
+test_numbers.py::test_square_is_nonnegative[219] PASSED                  [ 54%]
+test_numbers.py::test_square_is_nonnegative[220] PASSED                  [ 54%]
+test_numbers.py::test_square_is_nonnegative[221] PASSED                  [ 54%]
+test_numbers.py::test_square_is_nonnegative[222] PASSED                  [ 55%]
+test_numbers.py::test_square_is_nonnegative[223] PASSED                  [ 55%]
+test_numbers.py::test_square_is_nonnegative[224] PASSED                  [ 55%]
+test_numbers.py::test_square_is_nonnegative[225] PASSED                  [ 55%]
+test_numbers.py::test_square_is_nonnegative[226] PASSED                  [ 56%]
+test_numbers.py::test_square_is_nonnegative[227] PASSED                  [ 56%]
+test_numbers.py::test_square_is_nonnegative[228] PASSED                  [ 56%]
+test_numbers.py::test_square_is_nonnegative[229] PASSED                  [ 56%]
+test_numbers.py::test_square_is_nonnegative[230] PASSED                  [ 57%]
+test_numbers.py::test_square_is_nonnegative[231] PASSED                  [ 57%]
+test_numbers.py::test_square_is_nonnegative[232] PASSED                  [ 57%]
+test_numbers.py::test_square_is_nonnegative[233] PASSED                  [ 57%]
+test_numbers.py::test_square_is_nonnegative[234] PASSED                  [ 58%]
+test_numbers.py::test_square_is_nonnegative[235] PASSED                  [ 58%]
+test_numbers.py::test_square_is_nonnegative[236] PASSED                  [ 58%]
+test_numbers.py::test_square_is_nonnegative[237] PASSED                  [ 58%]
+test_numbers.py::test_square_is_nonnegative[238] PASSED                  [ 59%]
+test_numbers.py::test_square_is_nonnegative[239] PASSED                  [ 59%]
+test_numbers.py::test_square_is_nonnegative[240] PASSED                  [ 59%]
+test_numbers.py::test_square_is_nonnegative[241] PASSED                  [ 59%]
+test_numbers.py::test_square_is_nonnegative[242] PASSED                  [ 60%]
+test_numbers.py::test_square_is_nonnegative[243] PASSED                  [ 60%]
+test_numbers.py::test_square_is_nonnegative[244] PASSED                  [ 60%]
+test_numbers.py::test_square_is_nonnegative[245] PASSED                  [ 60%]
+test_numbers.py::test_square_is_nonnegative[246] PASSED                  [ 61%]
+test_numbers.py::test_square_is_nonnegative[247] PASSED                  [ 61%]
+test_numbers.py::test_square_is_nonnegative[248] PASSED                  [ 61%]
+test_numbers.py::test_square_is_nonnegative[249] PASSED                  [ 61%]
+test_numbers.py::test_square_is_nonnegative[250] PASSED                  [ 62%]
+test_numbers.py::test_square_is_nonnegative[251] PASSED                  [ 62%]
+test_numbers.py::test_square_is_nonnegative[252] PASSED                  [ 62%]
+test_numbers.py::test_square_is_nonnegative[253] PASSED                  [ 62%]
+test_numbers.py::test_square_is_nonnegative[254] PASSED                  [ 63%]
+test_numbers.py::test_square_is_nonnegative[255] PASSED                  [ 63%]
+test_numbers.py::test_square_is_nonnegative[256] PASSED                  [ 63%]
+test_numbers.py::test_square_is_nonnegative[257] PASSED                  [ 63%]
+test_numbers.py::test_square_is_nonnegative[258] PASSED                  [ 64%]
+test_numbers.py::test_square_is_nonnegative[259] PASSED                  [ 64%]
+test_numbers.py::test_square_is_nonnegative[260] PASSED                  [ 64%]
+test_numbers.py::test_square_is_nonnegative[261] PASSED                  [ 64%]
+test_numbers.py::test_square_is_nonnegative[262] PASSED                  [ 65%]
+test_numbers.py::test_square_is_nonnegative[263] PASSED                  [ 65%]
+test_numbers.py::test_square_is_nonnegative[264] PASSED                  [ 65%]
+test_numbers.py::test_square_is_nonnegative[265] PASSED                  [ 65%]
+test_numbers.py::test_square_is_nonnegative[266] PASSED                  [ 66%]
+test_numbers.py::test_square_is_nonnegative[267] PASSED                  [ 66%]
+test_numbers.py::test_square_is_nonnegative[268] PASSED                  [ 66%]
+test_numbers.py::test_square_is_nonnegative[269] PASSED                  [ 66%]
+test_numbers.py::test_square_is_nonnegative[270] PASSED                  [ 67%]
+test_numbers.py::test_square_is_nonnegative[271] PASSED                  [ 67%]
+test_numbers.py::test_square_is_nonnegative[272] PASSED                  [ 67%]
+test_numbers.py::test_square_is_nonnegative[273] PASSED                  [ 67%]
+test_numbers.py::test_square_is_nonnegative[274] PASSED                  [ 68%]
+test_numbers.py::test_square_is_nonnegative[275] PASSED                  [ 68%]
+test_numbers.py::test_square_is_nonnegative[276] PASSED                  [ 68%]
+test_numbers.py::test_square_is_nonnegative[277] PASSED                  [ 68%]
+test_numbers.py::test_square_is_nonnegative[278] PASSED                  [ 69%]
+test_numbers.py::test_square_is_nonnegative[279] PASSED                  [ 69%]
+test_numbers.py::test_square_is_nonnegative[280] PASSED                  [ 69%]
+test_numbers.py::test_square_is_nonnegative[281] PASSED                  [ 69%]
+test_numbers.py::test_square_is_nonnegative[282] PASSED                  [ 70%]
+test_numbers.py::test_square_is_nonnegative[283] PASSED                  [ 70%]
+test_numbers.py::test_square_is_nonnegative[284] PASSED                  [ 70%]
+test_numbers.py::test_square_is_nonnegative[285] PASSED                  [ 70%]
+test_numbers.py::test_square_is_nonnegative[286] PASSED                  [ 71%]
+test_numbers.py::test_square_is_nonnegative[287] PASSED                  [ 71%]
+test_numbers.py::test_square_is_nonnegative[288] FAILED                  [ 71%]
+test_numbers.py::test_square_is_nonnegative[289] PASSED                  [ 71%]
+test_numbers.py::test_square_is_nonnegative[290] PASSED                  [ 72%]
+test_numbers.py::test_square_is_nonnegative[291] PASSED                  [ 72%]
+test_numbers.py::test_square_is_nonnegative[292] PASSED                  [ 72%]
+test_numbers.py::test_square_is_nonnegative[293] PASSED                  [ 72%]
+test_numbers.py::test_square_is_nonnegative[294] PASSED                  [ 73%]
+test_numbers.py::test_square_is_nonnegative[295] PASSED                  [ 73%]
+test_numbers.py::test_square_is_nonnegative[296] PASSED                  [ 73%]
+test_numbers.py::test_square_is_nonnegative[297] PASSED                  [ 73%]
+test_numbers.py::test_square_is_nonnegative[298] PASSED                  [ 74%]
+test_numbers.py::test_square_is_nonnegative[299] PASSED                  [ 74%]
+test_numbers.py::test_square_is_nonnegative[300] PASSED                  [ 74%]
+test_numbers.py::test_square_is_nonnegative[301] PASSED                  [ 74%]
+test_numbers.py::test_square_is_nonnegative[302] PASSED                  [ 75%]
+test_numbers.py::test_square_is_nonnegative[303] PASSED                  [ 75%]
+test_numbers.py::test_square_is_nonnegative[304] PASSED                  [ 75%]
+test_numbers.py::test_square_is_nonnegative[305] PASSED                  [ 75%]
+test_numbers.py::test_square_is_nonnegative[306] PASSED                  [ 75%]
+test_numbers.py::test_square_is_nonnegative[307] PASSED                  [ 76%]
+test_numbers.py::test_square_is_nonnegative[308] PASSED                  [ 76%]
+test_numbers.py::test_square_is_nonnegative[309] PASSED                  [ 76%]
+test_numbers.py::test_square_is_nonnegative[310] PASSED                  [ 76%]
+test_numbers.py::test_square_is_nonnegative[311] PASSED                  [ 77%]
+test_numbers.py::test_square_is_nonnegative[312] PASSED                  [ 77%]
+test_numbers.py::test_square_is_nonnegative[313] PASSED                  [ 77%]
+test_numbers.py::test_square_is_nonnegative[314] PASSED                  [ 77%]
+test_numbers.py::test_square_is_nonnegative[315] PASSED                  [ 78%]
+test_numbers.py::test_square_is_nonnegative[316] PASSED                  [ 78%]
+test_numbers.py::test_square_is_nonnegative[317] PASSED                  [ 78%]
+test_numbers.py::test_square_is_nonnegative[318] PASSED                  [ 78%]
+test_numbers.py::test_square_is_nonnegative[319] PASSED                  [ 79%]
+test_numbers.py::test_square_is_nonnegative[320] PASSED                  [ 79%]
+test_numbers.py::test_square_is_nonnegative[321] PASSED                  [ 79%]
+test_numbers.py::test_square_is_nonnegative[322] PASSED                  [ 79%]
+test_numbers.py::test_square_is_nonnegative[323] PASSED                  [ 80%]
+test_numbers.py::test_square_is_nonnegative[324] PASSED                  [ 80%]
+test_numbers.py::test_square_is_nonnegative[325] PASSED                  [ 80%]
+test_numbers.py::test_square_is_nonnegative[326] PASSED                  [ 80%]
+test_numbers.py::test_square_is_nonnegative[327] PASSED                  [ 81%]
+test_numbers.py::test_square_is_nonnegative[328] PASSED                  [ 81%]
+test_numbers.py::test_square_is_nonnegative[329] PASSED                  [ 81%]
+test_numbers.py::test_square_is_nonnegative[330] PASSED                  [ 81%]
+test_numbers.py::test_square_is_nonnegative[331] PASSED                  [ 82%]
+test_numbers.py::test_square_is_nonnegative[332] PASSED                  [ 82%]
+test_numbers.py::test_square_is_nonnegative[333] PASSED                  [ 82%]
+test_numbers.py::test_square_is_nonnegative[334] PASSED                  [ 82%]
+test_numbers.py::test_square_is_nonnegative[335] PASSED                  [ 83%]
+test_numbers.py::test_square_is_nonnegative[336] PASSED                  [ 83%]
+test_numbers.py::test_square_is_nonnegative[337] PASSED                  [ 83%]
+test_numbers.py::test_square_is_nonnegative[338] PASSED                  [ 83%]
+test_numbers.py::test_square_is_nonnegative[339] PASSED                  [ 84%]
+test_numbers.py::test_square_is_nonnegative[340] PASSED                  [ 84%]
+test_numbers.py::test_square_is_nonnegative[341] PASSED                  [ 84%]
+test_numbers.py::test_square_is_nonnegative[342] PASSED                  [ 84%]
+test_numbers.py::test_square_is_nonnegative[343] PASSED                  [ 85%]
+test_numbers.py::test_square_is_nonnegative[344] PASSED                  [ 85%]
+test_numbers.py::test_square_is_nonnegative[345] PASSED                  [ 85%]
+test_numbers.py::test_square_is_nonnegative[346] PASSED                  [ 85%]
+test_numbers.py::test_square_is_nonnegative[347] PASSED                  [ 86%]
+test_numbers.py::test_square_is_nonnegative[348] PASSED                  [ 86%]
+test_numbers.py::test_square_is_nonnegative[349] PASSED                  [ 86%]
+test_numbers.py::test_square_is_nonnegative[350] PASSED                  [ 86%]
+test_numbers.py::test_square_is_nonnegative[351] PASSED                  [ 87%]
+test_numbers.py::test_square_is_nonnegative[352] PASSED                  [ 87%]
+test_numbers.py::test_square_is_nonnegative[353] PASSED                  [ 87%]
+test_numbers.py::test_square_is_nonnegative[354] PASSED                  [ 87%]
+test_numbers.py::test_square_is_nonnegative[355] PASSED                  [ 88%]
+test_numbers.py::test_square_is_nonnegative[356] PASSED                  [ 88%]
+test_numbers.py::test_square_is_nonnegative[357] PASSED                  [ 88%]
+test_numbers.py::test_square_is_nonnegative[358] PASSED                  [ 88%]
+test_numbers.py::test_square_is_nonnegative[359] PASSED                  [ 89%]
+test_numbers.py::test_square_is_nonnegative[360] PASSED                  [ 89%]
+test_numbers.py::test_square_is_nonnegative[361] PASSED                  [ 89%]
+test_numbers.py::test_square_is_nonnegative[362] PASSED                  [ 89%]
+test_numbers.py::test_square_is_nonnegative[363] PASSED                  [ 90%]
+test_numbers.py::test_square_is_nonnegative[364] PASSED                  [ 90%]
+test_numbers.py::test_square_is_nonnegative[365] PASSED                  [ 90%]
+test_numbers.py::test_square_is_nonnegative[366] PASSED                  [ 90%]
+test_numbers.py::test_square_is_nonnegative[367] PASSED                  [ 91%]
+test_numbers.py::test_square_is_nonnegative[368] PASSED                  [ 91%]
+test_numbers.py::test_square_is_nonnegative[369] PASSED                  [ 91%]
+test_numbers.py::test_square_is_nonnegative[370] PASSED                  [ 91%]
+test_numbers.py::test_square_is_nonnegative[371] PASSED                  [ 92%]
+test_numbers.py::test_square_is_nonnegative[372] PASSED                  [ 92%]
+test_numbers.py::test_square_is_nonnegative[373] PASSED                  [ 92%]
+test_numbers.py::test_square_is_nonnegative[374] PASSED                  [ 92%]
+test_numbers.py::test_square_is_nonnegative[375] PASSED                  [ 93%]
+test_numbers.py::test_square_is_nonnegative[376] PASSED                  [ 93%]
+test_numbers.py::test_square_is_nonnegative[377] PASSED                  [ 93%]
+test_numbers.py::test_square_is_nonnegative[378] PASSED                  [ 93%]
+test_numbers.py::test_square_is_nonnegative[379] PASSED                  [ 94%]
+test_numbers.py::test_square_is_nonnegative[380] PASSED                  [ 94%]
+test_numbers.py::test_square_is_nonnegative[381] PASSED                  [ 94%]
+test_numbers.py::test_square_is_nonnegative[382] PASSED                  [ 94%]
+test_numbers.py::test_square_is_nonnegative[383] PASSED                  [ 95%]
+test_numbers.py::test_square_is_nonnegative[384] PASSED                  [ 95%]
+test_numbers.py::test_square_is_nonnegative[385] PASSED                  [ 95%]
+test_numbers.py::test_square_is_nonnegative[386] PASSED                  [ 95%]
+test_numbers.py::test_square_is_nonnegative[387] PASSED                  [ 96%]
+test_numbers.py::test_square_is_nonnegative[388] PASSED                  [ 96%]
+test_numbers.py::test_square_is_nonnegative[389] PASSED                  [ 96%]
+test_numbers.py::test_square_is_nonnegative[390] PASSED                  [ 96%]
+test_numbers.py::test_square_is_nonnegative[391] PASSED                  [ 97%]
+test_numbers.py::test_square_is_nonnegative[392] PASSED                  [ 97%]
+test_numbers.py::test_square_is_nonnegative[393] PASSED                  [ 97%]
+test_numbers.py::test_square_is_nonnegative[394] PASSED                  [ 97%]
+test_numbers.py::test_square_is_nonnegative[395] PASSED                  [ 98%]
+test_numbers.py::test_square_is_nonnegative[396] PASSED                  [ 98%]
+test_numbers.py::test_square_is_nonnegative[397] PASSED                  [ 98%]
+test_numbers.py::test_square_is_nonnegative[398] PASSED                  [ 98%]
+test_numbers.py::test_square_is_nonnegative[399] PASSED                  [ 99%]
+test_numbers.py::test_parse_ratio[1/2] PASSED                            [ 99%]
+test_numbers.py::test_parse_ratio[3/4] PASSED                            [ 99%]
+test_numbers.py::test_parse_ratio[5/0] FAILED                            [ 99%]
+test_numbers.py::test_deprecated_api FAILED                              [100%]
+
+================================== FAILURES ===================================
+_______________________ test_square_is_nonnegative[37] ________________________
+
+n = 37
+
+    @pytest.mark.parametrize("n", range(400))
+    def test_square_is_nonnegative(n):
+        if n in (37, 151, 288):
+>           assert n * n < 0, f"square of {n} should be negative?"
+E           AssertionError: square of 37 should be negative?
+E           assert (37 * 37) < 0
+
+test_numbers.py:12: AssertionError
+_______________________ test_square_is_nonnegative[151] _______________________
+
+n = 151
+
+    @pytest.mark.parametrize("n", range(400))
+    def test_square_is_nonnegative(n):
+        if n in (37, 151, 288):
+>           assert n * n < 0, f"square of {n} should be negative?"
+E           AssertionError: square of 151 should be negative?
+E           assert (151 * 151) < 0
+
+test_numbers.py:12: AssertionError
+_______________________ test_square_is_nonnegative[288] _______________________
+
+n = 288
+
+    @pytest.mark.parametrize("n", range(400))
+    def test_square_is_nonnegative(n):
+        if n in (37, 151, 288):
+>           assert n * n < 0, f"square of {n} should be negative?"
+E           AssertionError: square of 288 should be negative?
+E           assert (288 * 288) < 0
+
+test_numbers.py:12: AssertionError
+____________________________ test_parse_ratio[5/0] ____________________________
+
+text = '5/0'
+
+    @pytest.mark.parametrize("text", ["1/2", "3/4", "5/0"])
+    def test_parse_ratio(text):
+>       assert parse_ratio(text) <= 1
+
+test_numbers.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+text = '5/0'
+
+    def parse_ratio(text):
+        num, den = text.split("/")
+>       return int(num) / int(den)
+E       ZeroDivisionError: division by zero
+
+test_numbers.py:6: ZeroDivisionError
+_____________________________ test_deprecated_api _____________________________
+
+    def test_deprecated_api():
+        for _ in range(300):
+            print("DeprecationWarning: legacy_mode is deprecated and will be removed")
+>       assert False, "legacy_mode still enabled"
+E       AssertionError: legacy_mode still enabled
+E       assert False
+
+test_numbers.py:24: AssertionError
+---------------------------- Captured stdout call -----------------------------
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+DeprecationWarning: legacy_mode is deprecated and will be removed
+=========================== short test summary info ===========================
+FAILED test_numbers.py::test_square_is_nonnegative[37] - AssertionError: squa...
+FAILED test_numbers.py::test_square_is_nonnegative[151] - AssertionError: squ...
+FAILED test_numbers.py::test_square_is_nonnegative[288] - AssertionError: squ...
+FAILED test_numbers.py::test_parse_ratio[5/0] - ZeroDivisionError: division b...
+FAILED test_numbers.py::test_deprecated_api - AssertionError: legacy_mode sti...
+======================== 5 failed, 399 passed in 0.59s ========================

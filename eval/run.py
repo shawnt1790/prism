@@ -85,20 +85,14 @@ def mini_swebench_config(base: dict, model: str) -> dict:
 
 def get_compress(policy_cfg: dict, run_id: str, logger):
     """Returns the function PrismAgent calls on each ToolResultEvent."""
-    from adapters.mini_swe_agent import passthrough
+    from adapters.mini_swe_agent import HARNESS_NAME, PROVIDES, passthrough
+    from prism.policy import make_compress
 
-    policy = policy_cfg.get("policy", "none")
-    if policy == "none":
+    if policy_cfg.get("policy", "none") == "none":
         return passthrough
-    # Integration point with Person A's library (to agree on day 2):
-    # prism.policy.make_compress(policy_cfg, run_id=..., logger=...) -> Callable[[ToolResultEvent], str]
-    # It should build the policy from the registry, and write a CompressionRecord per call.
-    try:
-        from prism.policy import make_compress
-    except ImportError as e:
-        raise SystemExit(f"Config uses policy {policy!r}, but prism.policy.make_compress "
-                         f"doesn't exist yet ({e}). Use configs/none.yaml for baselines.")
-    return make_compress(policy_cfg, run_id=run_id, logger=logger)
+    # Builds the policy from the registry, checks capabilities, writes a CompressionRecord per call.
+    return make_compress(policy_cfg, run_id=run_id, logger=logger,
+                         provides=PROVIDES, harness=HARNESS_NAME)
 
 
 # ---------- one run ----------
